@@ -6,13 +6,13 @@ const localStyles = StyleSheet.create({
   content: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '2px',
+    gap: '5px',
   },
   content_item: {
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: '#e5e5e5',
     justifyContent: 'space-between',
+    alignItems: 'center',
   }
 })
 
