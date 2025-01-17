@@ -1,4 +1,4 @@
-import type { Resume } from '@/resume'
+import type { Resume } from '@/resume-type'
 import {
   render,
   Text,

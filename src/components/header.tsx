@@ -3,7 +3,7 @@ import {
   View,
 } from '@react-pdf/renderer';
 import { styles } from '@/style';
-import type { Resume } from '@/resume';
+import type { Resume } from '@/resume-type';
 
 export function Header({ content }: { content: Resume }) {
   return (

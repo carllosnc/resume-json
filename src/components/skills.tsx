@@ -1,6 +1,6 @@
 import { View, Text } from "@react-pdf/renderer"
 import { styles } from "@/style"
-import type { Resume } from "@/resume"
+import type { Resume } from "@/resume-type"
 
 export function Skills({ content }: { content: Resume }) {
   return (

@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
 import { styles } from "@/style";
-import type { Resume } from "@/resume";
+import type { Resume } from "@/resume-type";
 
 const localStyles = StyleSheet.create({
   content: {
