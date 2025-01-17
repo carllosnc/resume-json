@@ -2,6 +2,12 @@
   "name": "resume-json",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun ./src/index.tsx ./data.json"
+  },
+  "bin": {
+    "resume-json": "./src/index.tsx"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/react": "^19.0.7",
