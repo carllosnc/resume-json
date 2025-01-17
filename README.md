@@ -1,15 +1,13 @@
-# resume-json
+# Resume JSON
 
-To install dependencies:
+>This is a resume generator that uses JSON as the data source.
 
-```bash
-bun install
-```
+## What's inside?
 
-To run:
+- bun
+- react
+- react-pdf
 
-```bash
-bun run index.ts
-```
+---
 
-This project was created using `bun init` in bun v1.1.40. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Carlos Costa @ 2025
