@@ -41,9 +41,8 @@ const MyDocument = () => (
       <Education content={content} />
       <View style={styles.line} />
       <Extras content={content} />
-
     </Page>
   </Document>
 );
 
-render(<MyDocument />, `./example.pdf`);
+render(<MyDocument />, `./RESUME-${content.name}.pdf`);
