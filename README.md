@@ -1,3 +1,5 @@
+<img src="https://res.cloudinary.com/carllosnc/image/upload/v1737156951/resume-json-github_bqt2oe.webp"></img>
+
 <h1 align="center">
   Resume JSON 📄
 </h1>
