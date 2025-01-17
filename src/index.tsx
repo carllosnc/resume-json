@@ -10,7 +10,7 @@ import { styles } from '@/style'
 import { Header } from '@/components/header'
 import { PersonalInfo } from '@/components/personal-info'
 import { Skills } from '@/components/skills'
-import { WorkExperiences } from '@/components/work_experiences'
+import { WorkExperiences } from '@/components/work-experiences'
 import { Education } from '@/components/education'
 import { Extras } from '@/components/extras'
 
