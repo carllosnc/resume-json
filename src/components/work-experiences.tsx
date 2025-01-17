@@ -7,6 +7,12 @@ const localStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     gap: '2px',
+  },
+  content_item: {
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: '#e5e5e5',
+    justifyContent: 'space-between',
   }
 })
 
@@ -20,12 +26,7 @@ export function WorkExperiences({ content }: { content: Resume }) {
         content.work_experiences.experiences.map((item, index) => {
           return (
             <View key={`${index}`} style={localStyles.content}>
-              <View style={{
-                display: 'flex',
-                flexDirection: 'row',
-                backgroundColor: '#e5e5e5',
-                justifyContent: 'space-between',
-              }}>
+              <View style={localStyles.content_item}>
                 <Text style={styles.feature}>
                   { item.company } | { item.position }
                 </Text>

@@ -2,6 +2,20 @@ import { View, Text, StyleSheet } from "@react-pdf/renderer";
 import { styles } from "@/style";
 import type { Resume } from "@/resume";
 
+const localStyles = StyleSheet.create({
+  content: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2px',
+  },
+  content_item: {
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: '#e5e5e5',
+    justifyContent: 'space-between',
+  }
+})
+
 export function Education({ content }: {content: Resume}){
   return (
     <View style={styles.section}>
@@ -9,26 +23,17 @@ export function Education({ content }: {content: Resume}){
         { content.educations.title }
       </Text>
 
-      <View style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "5px"
-      }}>
+      <View style={localStyles.content}>
         { content.educations.items.map(item => {
           return (
-            <View key={item.school} style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between"
-            }}>
-                <View>
-                  <Text style={styles.feature}> • { item.school } - {item.location} </Text>
-                  <Text style={styles.text}>{ item.degree } </Text>
-                </View>
-                <Text style={styles.feature}>
-                  { item.start_date } - { item.end_date }
-                </Text>
+            <View key={item.school} style={localStyles.content_item}>
+              <View>
+                <Text style={styles.feature}> • { item.school } - {item.location} </Text>
+                <Text style={styles.text}>{ item.degree } </Text>
+              </View>
+              <Text style={styles.feature}>
+                { item.start_date } - { item.end_date }
+              </Text>
             </View>
           )
         })}
