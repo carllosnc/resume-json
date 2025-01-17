@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     padding: '20px'
   },
   name: {
-    fontSize: "25px",
+    fontSize: "20px",
     fontFamily: "Times-Bold",
   },
   header: {
