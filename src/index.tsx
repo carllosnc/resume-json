@@ -18,6 +18,15 @@ import { checkContent } from '@/check-resume'
 
 const file = Bun.file(process.argv[2]);
 const content: Resume = await file.json();
+const fileName = `RESUME-${content.name.replaceAll(" ", "-")}`;
+
+function getCurrentPath() {
+  if (process.platform === "win32") {
+    return `${process.cwd()}\\`
+  }
+
+  return process.cwd();
+}
 
 checkContent(content);
 
@@ -46,6 +55,8 @@ const MyDocument = () => (
 );
 
 console.log(`🎉 Resume for ${content.name} generated`);
-console.log(`📄 RESUME-${content.name}.pdf`);
+console.log(`📄 ${getCurrentPath()}${fileName}.pdf`);
+console.log(`😎 Designed and coded by Carlos Costa`);
+console.log(`📂 Repo: https://github.com/carllosnc/resume-json`)
 
-render(<MyDocument />, `./RESUME-${content.name}.pdf`);
+render(<MyDocument />, `./${fileName}.pdf`);
