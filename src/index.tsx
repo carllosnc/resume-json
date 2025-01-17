@@ -45,6 +45,7 @@ const MyDocument = () => (
   </Document>
 );
 
-console.log(`🎉 Resume for ${content.name} generated at ./RESUME-${content.name}.pdf`);
+console.log(`🎉 Resume for ${content.name} generated`);
+console.log(`📄 RESUME-${content.name}.pdf`);
 
 render(<MyDocument />, `./RESUME-${content.name}.pdf`);
