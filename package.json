@@ -4,7 +4,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun ./src/index.tsx ./src/data.json"
+    "dev": "bun ./src/index.tsx ./data.json",
+    "gen": "bun ./src/resume-type.ts"
   },
   "bin": {
     "resume-json": "./src/index.tsx"
