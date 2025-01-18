@@ -24,7 +24,7 @@
 
 This is a example of an outputted resume.
 
-**[👉 Example](https://github.com/carllosnc/resume-json/blob/master/RESUME-John%20Doe.pdf)**
+**[👉 Example](https://github.com/carllosnc/resume-json/blob/master/RESUME-John-Doe.pdf)**
 
 ## data.json
 
