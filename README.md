@@ -154,6 +154,14 @@ This is a example of an outputted resume.
 - react
 - react-pdf
 
+## Development
+
+Just run the below command to generate the resume.
+
+```bash
+bun dev
+```
+
 ---
 
 Carlos Costa @ 2025
