@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Just run in your terminal
+  Just run in your terminal.
 </p>
 
 <h3 align="center">
@@ -18,6 +18,10 @@
 
 <h3 align="center">
   npx carllosnc/resume-json ./data.json
+</h3>
+
+<h3 align="center">
+  bunx carllosnc/resume-json ./data.json
 </h3>
 
 ## Example
@@ -34,7 +38,7 @@ This is a example of an outputted resume.
 {
   "name": "John Doe",
   "header": {
-    "position": "Back-end • DevOps",
+    "position": "Senior Cloud DevOps Architect",
     "website": "johndoe.com",
     "github": "github.com/johndoe",
     "linkedin": "linkedin.com/in/johndoe"
@@ -49,100 +53,94 @@ This is a example of an outputted resume.
     ]
   },
   "skills": {
-    "title": "Skills",
-    "description": "Back-end developer with experience in server-side logic, database management, API integration, and cloud infrastructure.",
+    "title": "Technical Skills",
+    "description": "Results-driven Senior Software Engineer and Cloud DevOps Architect with 12+ years of experience in enterprise-scale applications, microservices architecture, and cloud infrastructure optimization.",
     "skill_section": [
       {
-        "title": "Backend development:",
-        "items": "Node.js, Python, Java, SQL, NoSQL, REST, GraphQL"
+        "title": "Programming Languages & Frameworks:",
+        "items": "Node.js, Python (Django, Flask), Java (Spring Boot), JavaScript/TypeScript, SQL (PostgreSQL, MySQL), MongoDB, Redis, RESTful APIs, GraphQL"
       },
       {
-        "title": "DevOps:",
-        "items": "Docker, Kubernetes, AWS, Azure, CI/CD"
-      },
-      {
-        "title": "Tools:",
-        "items": "Git, Jenkins, Terraform, Ansible"
+        "title": "Cloud & DevOps:",
+        "items": "AWS (EC2, S3, Lambda, ECS, RDS), Azure (AKS, Functions), Docker, Kubernetes, Jenkins, CircleCI, GitLab CI, Infrastructure as Code (IaC), Terraform, Ansible, Prometheus, ELK Stack"
       }
     ]
   },
   "work_experiences": {
-    "title": "Professional Experiences",
+    "title": "Professional Experience",
     "experiences": [
       {
         "company": "TechCorp",
-        "position": "Back-end Developer",
+        "position": "Senior Software Engineer & Cloud Architect",
         "start_date": "Jan 2018",
         "end_date": "Dec 2022",
         "description": [
-          "Led the development of a microservices architecture, improving system scalability and performance.",
-          "Implemented CI/CD pipelines, reducing deployment times by 40%.",
-          "Collaborated with front-end developers to integrate APIs and improve user experience.",
-          "Managed cloud infrastructure on AWS, ensuring high availability and security."
+          "Architected and implemented microservices platform serving 1M+ daily users, resulting in 99.99% uptime and 60% reduction in response times",
+          "Designed and deployed automated CI/CD pipelines using Jenkins and GitLab CI, reducing deployment time from 2 hours to 15 minutes and deployment failures by 75%",
+          "Led migration of legacy monolithic application to containerized microservices using Docker and Kubernetes, resulting in 40% cost reduction in cloud infrastructure"
         ]
       },
       {
         "company": "WebSolutions",
-        "position": "DevOps Engineer",
+        "position": "DevOps Engineer Team Lead",
         "start_date": "Jun 2015",
         "end_date": "Dec 2018",
         "description": [
-          "Automated infrastructure provisioning using Terraform and Ansible.",
-          "Set up monitoring and logging systems to ensure system reliability.",
-          "Worked with development teams to optimize application performance.",
-          "Implemented containerization using Docker and Kubernetes."
+          "Orchestrated cloud infrastructure automation using Terraform and Ansible, reducing provisioning time by 85% and human error by 90%",
+          "Implemented comprehensive monitoring solution using Prometheus, Grafana, and ELK Stack, achieving 95% faster incident response time",
+          "Mentored team of 5 junior DevOps engineers and established best practices, resulting in 30% improvement in team productivity"
         ]
       },
       {
         "company": "DataStream",
-        "position": "Software Engineer",
+        "position": "Full Stack Software Engineer",
         "start_date": "Mar 2013",
         "end_date": "May 2015",
         "description": [
-          "Developed and maintained RESTful APIs for data processing.",
-          "Optimized database queries to improve application performance.",
-          "Collaborated with cross-functional teams to deliver high-quality software.",
-          "Implemented security best practices to protect sensitive data."
+          "Developed scalable RESTful APIs processing 500K+ daily requests with average response time under 100ms",
+          "Optimized database performance through query tuning and indexing, reducing average query time by 70%",
+          "Implemented OAuth2 authentication and role-based access control (RBAC), ensuring secure access for 50K+ users"
         ]
       },
       {
         "company": "NetSolutions",
-        "position": "Junior Developer",
+        "position": "Software Developer",
         "start_date": "Jul 2011",
         "end_date": "Feb 2013",
         "description": [
-          "Assisted in the development of web applications using JavaScript and PHP.",
-          "Performed code reviews and debugging to ensure code quality.",
-          "Participated in agile development processes and sprint planning.",
-          "Maintained documentation for software projects."
+          "Developed and maintained full-stack web applications using JavaScript, PHP, and MySQL, serving 10K+ daily active users",
+          "Implemented automated testing suite achieving 85% code coverage and reducing bug reports by 40%",
+          "Collaborated in agile development environment, consistently delivering 95% of sprint commitments"
         ]
       }
     ]
   },
   "educations": {
-    "title": "Educations",
+    "title": "Education",
     "items": [
       {
         "school": "State University",
         "location": "New York, NY",
-        "degree": "Bachelor in Computer Science",
+        "degree": "Bachelor of Science in Computer Science",
         "start_date": "2008",
         "end_date": "2012"
       },
       {
         "school": "Tech Institute",
         "location": "San Francisco, CA",
-        "degree": "Master in Software Engineering",
+        "degree": "Master of Science in Software Engineering",
         "start_date": "2013",
         "end_date": "2015"
       }
     ]
   },
   "extras": {
-    "title": "Extras",
+    "title": "Additional Information",
     "items": [
-      "Freelancer for 5 years in web development and design, Speaker at multiple tech conferences, including DevOps Days and PyCon",
-      "Experienced in building scalable web applications, API development, and cloud services"
+      "AWS Certified Solutions Architect - Professional & DevOps Engineer - Professional",
+      "Led technical workshops at major conferences including AWS re:Invent, DevOps Days, and PyCon",
+      "Open source contributor to Kubernetes and Terraform projects",
+      "Patents: Co-inventor of two pending patents in distributed systems and cloud architecture"
     ]
   }
 }
