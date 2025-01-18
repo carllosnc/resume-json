@@ -133,7 +133,6 @@ const data: Resume = {
         "degree": "Bachelor of Science in Computer Science",
         "start_date": "2008",
         "end_date": "2012",
-        // "details": "Focus on Software Engineering and Distributed Systems"
       },
       {
         "school": "Tech Institute",
@@ -141,7 +140,6 @@ const data: Resume = {
         "degree": "Master of Science in Software Engineering",
         "start_date": "2013",
         "end_date": "2015",
-        // "details": "Specialization in Cloud Computing and Distributed Systems"
       }
     ]
   },
