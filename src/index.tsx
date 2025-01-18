@@ -13,7 +13,6 @@ import { Skills } from '@/components/skills'
 import { WorkExperiences } from '@/components/work-experiences'
 import { Education } from '@/components/education'
 import { Extras } from '@/components/extras'
-
 import { checkContent } from '@/check-resume'
 
 const file = Bun.file(process.argv[2]);
@@ -46,10 +45,22 @@ const MyDocument = () => (
       <Skills content={content} />
       <View style={styles.line} />
       <WorkExperiences content={content} />
-      <View style={styles.line} />
-      <Education content={content} />
-      <View style={styles.line} />
-      <Extras content={content} />
+
+      {
+        content.educations && (content.educations?.items?.length > 0) &&
+        <>
+          <View style={styles.line} />
+          <Education content={content} />
+        </>
+      }
+
+      {
+        content.extras && (content.extras?.items?.length > 0) &&
+        <>
+          <View style={styles.line} />
+          <Extras content={content} />
+        </>
+      }
     </Page>
   </Document>
 );
