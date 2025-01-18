@@ -1,4 +1,4 @@
-<img src="https://res.cloudinary.com/carllosnc/image/upload/v1737156951/resume-json-github_bqt2oe.webp"></img>
+<img src="https://res.cloudinary.com/carllosnc/image/upload/v1737169730/resume-json_jz7aiq.png"></img>
 
 <h1 align="center">
   Resume JSON 📄
