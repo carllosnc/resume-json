@@ -5,24 +5,22 @@
 </h1>
 
 <p align="center">
-  This is a resume generator that uses JSON as the data source.
+  Resume generator that uses JSON as the data source.
 </p>
 
-<p align="center">
-  Just run in your terminal.
-</p>
+## How to use
 
-<h3 align="center">
-  👇
-</h3>
+Just call the command and pass the path to the data.json file.
 
-<h3 align="center">
-  npx carllosnc/resume-json ./data.json
-</h3>
+With npx:
+```bash
+npx carllosnc/resume-json ./data.json
+```
 
-<h3 align="center">
-  bunx carllosnc/resume-json ./data.json
-</h3>
+With bun:
+```bash
+bunx carllosnc/resume-json ./data.json
+```
 
 ## Example
 
@@ -32,7 +30,7 @@ This is a example of an outputted resume.
 
 ## data.json
 
-`data.json` is a a json file that will be used as the data source for the resume.
+`data.json` is the file that will be used as the data source for the resume.
 
 ```json
 {
@@ -144,6 +142,120 @@ This is a example of an outputted resume.
     ]
   }
 }
+```
+
+## data.json and types
+
+Use that script to generate the `data.json` file following the `Resume` type.
+
+**gen-data.ts**
+```ts
+export type Resume = {
+  name: string;
+  header: {
+    position: string;
+    website?: string;
+    github?: string;
+    linkedin?: string;
+  },
+  personal_info: {
+    title: string,
+    info: string[]
+  },
+  skills: {
+    title: string,
+    description: string;
+    skill_section: {
+      title: string;
+      items: string;
+    }[]
+  },
+  work_experiences: {
+    title: string,
+    experiences: {
+      company: string,
+      position: string,
+      start_date: string,
+      end_date: string,
+      description: string[]
+    }[]
+  },
+  educations: {
+    title: string,
+    items: {
+      school: string,
+      degree: string,
+      location: string,
+      start_date: string,
+      end_date: string,
+    }[]
+  },
+  extras: {
+    title: string,
+    items: string[]
+  }
+};
+
+const data: Resume = {
+  "name": "",
+  "header": {
+    "position": "",
+    "website": "",
+    "github": "",
+    "linkedin": ""
+  },
+  "personal_info": {
+    "title": "",
+    "info": []
+  },
+  "skills": {
+    "title": "",
+    "description": "",
+    "skill_section": [
+      {
+        "title": "",
+        "items": ""
+      },
+    ]
+  },
+  "work_experiences": {
+    "title": "",
+    "experiences": [
+      {
+        "company": "",
+        "position": "",
+        "start_date": "",
+        "end_date": "",
+        "description": []
+      },
+    ]
+  },
+  "educations": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "",
+        "location": "",
+        "degree": "",
+        "start_date": "",
+        "end_date": "",
+      },
+    ]
+  },
+  "extras": {
+    "title": "Additional Information",
+    "items": []
+  }
+}
+
+const path = "./data.json"
+await Bun.write(path, JSON.stringify(data, null, 2))
+```
+
+Execute the script:
+
+```bash
+bun ./src/gen-data.ts
 ```
 
 ## What's inside?
