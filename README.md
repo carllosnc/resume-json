@@ -162,6 +162,14 @@ Just run the below command to generate the resume.
 bun dev
 ```
 
+## Resume checker
+
+The example provided of resume performs very well on resume checker.
+
+https://www.resumego.net/resume-checker/
+
+<img src="https://res.cloudinary.com/carllosnc/image/upload/v1737229865/ats-checker_tcivpo.webp"></img>
+
 ---
 
 Carlos Costa @ 2025
