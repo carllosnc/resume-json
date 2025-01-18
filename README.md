@@ -12,12 +12,6 @@
 
 Just call the command and pass the path to the data.json file.
 
-With npx:
-```bash
-npx carllosnc/resume-json ./data.json
-```
-
-With bun:
 ```bash
 bunx carllosnc/resume-json ./data.json
 ```
@@ -255,7 +249,7 @@ await Bun.write(path, JSON.stringify(data, null, 2))
 Execute the script:
 
 ```bash
-bun ./src/gen-data.ts
+bun ./gen-data.ts
 ```
 
 ## What's inside?
