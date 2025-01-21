@@ -260,7 +260,13 @@ bun ./gen-data.ts
 
 ## Development
 
-Just run the below command to generate the resume.
+generate data.json:
+
+```bash
+bun run gen
+```
+
+generate resume pdf:
 
 ```bash
 bun dev
