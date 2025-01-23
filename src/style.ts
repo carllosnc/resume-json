@@ -18,7 +18,9 @@ export const styles = StyleSheet.create({
   header: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    columnGap: '20px',
+    rowGap: '3px'
   },
   position: {
     fontSize: "12px"
